@@ -1,25 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Table</title>
+    <link rel="stylesheet" href="style.css">
+  
+  <style>
+    body{
+        background-color: darkgoldenrod;
+       
+    }
+  
+    .item-01{
+        box-shadow: inset -5px 1px 5px 1px #000000;
+        text-align: center;
+        
+    }
+    .item-02{
+        box-shadow: inset 5px 1px 5px 1px #000000;
+        text-align: center;
+        text-shadow:inset  5px 1px 5px 1px #000;
+        background-color: blue;
+    }
+    .linha th{
+        background-color: rgb(0, 0, 0);
+        text-align: center;
+    }
+    h1{
+        color: rgb(75, 3, 18);
+        text-shadow: 10px 10px 10px #000;
+    }
+    .linha-02 td{
+        background-color: #000000;
+        text-shadow: 10px 10px 10px #000;
+        text-align: center;
+    }
+    .linha-03{
+        background-color: crimson;
+        text-shadow: 10px 10px 10px #000;
+        text-align: center;
+    }
+    table{
+    margin: 1%;
+    display: block;
+    display: flex;
+    display: inline-table;
+    width: 450px;
+    padding: 3px;
+    box-shadow: 10px 10px 10px #000;
+   }
+  </style>
 </head>
+
 <body>
-    
-    <table>
-        <tr>
-            <th></th>
-            <th></th>
-            <th></th>
-            <th></th>
+    <h1>This is an element with classes.</h1>
+<h2>Discover the answer.</h2>
+    <table border="4" bgcolor="blue" style="color: antiquewhite;">
+        <tr class="linha">
+            <th>Hello world</th>
+            <th>This is a could</th>
+            <th>This is a paragraph</th>
+            <th>This is a title</th>
         </tr>
         <tr>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
+            <td class="item-01">This is 🐀</td><!--O atributo global é uma lista separada por espaços das classes do elemento que diferenciam maiúsculas de minúsculas.-->
+            <td>This is a 🍖 </td>
+            <td>This is a 🥥</td>
+            <td>This is a 🥚</td>
+        </tr>
+        <tr class="linha-02"> <!--As classes permitem que CSS e JavaScript selecionem e acessem elementos específicos por meio de seletores de classe ou funções como o método DOM .-->
+            <td>This is a 🍍</td>
+            <td>This  is a </td>
+            <td>This is a 🐈</td>
+            <td>This is a 🐟</td>
+        </tr>
+        <tr class="linha-03">
+            <td>This a 🍎</td>
+            <td> This is a 🍇</td>
+            <td>This is a 🧄</td>
+            <td>This is a 💻</td>
         </tr>
     </table>
+    <br>
+    <p>As classes permitem que CSS e JavaScript  <br> selecionem e acessem elementos específicos por meio de seletores de classe ou funções como o método DOM .</p>
 </body>
+
 </html>
